@@ -1,0 +1,59 @@
+﻿{
+	"text": "You begin in a dimly lit room. It's quite small and it's mostly empty, however you can see there are darker patches of light, probably objects. But you cannot see any more than that on first glance, as your eyes continue to adjust to the lighting. Do you: ",
+
+	"options": [
+		{
+			"title": "Try to locate an exit",
+			"nextParagraph": {
+				"text": "You walk along the edge of the room. On the walls, you notice:"
+			}
+		},
+		{
+			"title": "Check your pockets",
+			"nextParagraph": {
+				"text": "You check your pockets, finding a gummy bear, a pen and a torch with no batteries",
+				"options": [
+					{
+						"title": "Inspect the pen",
+						"nextParagraph": {}
+					},
+					{
+						"title": "Attempt to find a battery somewhere in the room",
+						"nextParagraph": {
+							"text": "BY this point your eyes have adjusted to the darkness, you can make out what is now in the room, it appers small and confined. You find a table and a box in the corner.",
+							"options": []
+						}
+					},
+					{
+						"title": "Eat the gummy bear",
+						"nextParagraph": {
+							"text": "You gently pop the gummy bear in your mouth, noticing it tastes slightly off. Your vision starts to fade and you collapse on the floor. The gummy bear was laced with sodium cianide, you have died!",
+							"options": []
+						}
+					}
+				]
+			}
+		},
+		{
+			"title": "Scream as loud as you can",
+			"nextParagraph": {
+				"text": "By an unfortunate coincidence, your scream was exactly the resonant frequency of the ceiling, causing it to shatter and collapse on top of you. You die.",
+				"options": []
+			}
+		},
+		{
+			"title": "Wait for your eyes to fully adjust",
+			"nextParagraph": {
+				"text": "You now start to see the walls of the room more clearly. It is confined...like a cage. You suddenly feel trapped and try to find clues around you. YOU FIND A RED PILL, A SYRINGE AND A LASER ",
+				"options": [
+					{
+						"title": "Get the red pill",
+						"nextParagraph": {
+							"text": "You took the red pill and something is not right. Your eyes start swelling and burning in such a way that tears sta"
+						}
+					}
+				]
+			}
+		}
+	]
+}
