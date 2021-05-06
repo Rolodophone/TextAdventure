@@ -17,6 +17,21 @@ class MainClass
 
     public static void playParagraph(Paragraph paragraph)
     {
+        if (paragraph.options.Length == 0)
+        {
+            Console.WriteLine(paragraph.text);
+            Console.WriteLine("Game over! Press 1 to try again and press 2 to quit");
+            int userInput = int.Parse(Console.ReadLine());
+            if (userInput == 1)
+            {
+                startGame();
+            }
+            else
+            {
+                System.Environment.Exit(1);
+            }
+
+        }
         Console.WriteLine(paragraph.text);
         printOptions(paragraph.options);
         Option option = handleOptionsInput(paragraph.options);
@@ -27,7 +42,7 @@ class MainClass
     {
         for (int i = 0; i < options.Length; i++)
         {
-            string option_string = $"{i + 1}) {options[i].name}";
+            string option_string = $"{i + 1}) {options[i].title}";
             Console.WriteLine(option_string);
         }
 
@@ -35,13 +50,24 @@ class MainClass
 
     public static Option handleOptionsInput(Option[] options)
     {
-        Console.WriteLine("What option do you want to choose?");
+        Console.WriteLine("Which option do you want to choose?");
+        int userOption;
 
-        int userOption = int.Parse(Console.ReadLine());
-        // if(userOption.tryParse() != true){
-        // 	Console.WriteLine("That input is not valid. Please enter a number representing the option you want to choose.");
-        // 	userOption = int.Parse(Console.ReadLine());
-        // }
+        while (true)
+        {
+            string userOptionString = Console.ReadLine();
+
+            if (!int.TryParse(userOptionString, out userOption) || userOption > options.Length)
+            {
+                Console.WriteLine("That input is not valid. Please enter a number representing the option you want to choose.");
+                continue;
+            }
+            else
+            {
+                break;
+            }
+        }
+
         Option option = options[userOption - 1];
         return option;
     }
@@ -62,12 +88,12 @@ class Paragraph
 
 class Option
 {
-    public string name;
+    public string title;
     public Paragraph nextParagraph;
 
     public Option(string s, Paragraph paragraph)
     {
         this.nextParagraph = paragraph;
-        this.name = s;
+        this.title = s;
     }
 }

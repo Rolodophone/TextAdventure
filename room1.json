@@ -1,11 +1,56 @@
 ﻿{
 	"text": "You begin in a dimly lit room. It's quite small and it's mostly empty, however you can see there are darker patches of light, probably objects. But you cannot see any more than that on first glance, as your eyes continue to adjust to the lighting. Do you: ",
-
 	"options": [
 		{
 			"title": "Try to locate an exit",
 			"nextParagraph": {
-				"text": "You walk along the edge of the room. On the walls, you notice:"
+				"text": "As you walk along the edge of the room, you notice 4 cameras, one in each corner. The walls are white and cold. There is a door, but it is locked. Do you..?",
+				"options": [
+					{
+						"title": "Attempt to destroy the cameras",
+						"nextParagraph": {
+							"text": "You check your pockets and you find a pen. Excellent. You click the top of the pen, opening it. Its the best weapon you're going to get, and its very valuable at this moment. Since the camera is slightly out of reach, you jump, slamming the sharp end of the pen into the camera. It shatters almost instantly, small bits of glass crashing to the floor. You smile. Do you...?",
+							"options": [
+								{
+									"title": "Continue to destroy the rest of the cameras",
+									"nextParagraph": {
+										"text": "You go to the opposite corner, and you attempt to destroy this camera. But as the pieces fall to the ground, you start to notice the walls are melting. You try to run, but as you hit the wall, you notice it is solid after all. You look at your hands. The skin seems to be melting too, but you feel nothing. The last thing you see is the ceiling before the dark takes over. You have died.",
+										"options": []
+									}
+								},
+								{
+									"title": "Use the pen to attempt to create a hole.",
+									"nextParagraph": {
+										"text": "You kneel to the ground, knocking on various places on the wall, pressing your ear to it to try to detect whats on the other side. As you do this, you notice that most of the wall is solid, apart from a few small areas, right next to the corners of the room. You look at the broken camera. You smile. You have made a blind spot. Using the pen, you start to, at first, gently tap the wall, getting harder and harder and harder as chunks begin to fall off. You can't see the other end, but thats okay. You know there is a potential way out. Do you..?",
+										"options": [
+											{
+												"title": "Keep digging the hole",
+												"nextParagraph": {
+													"text": "You keep going, hitting the sharp end of the pen against the wall as more and more bits crumble off. It looks like it will take forever to break, but time is something you have too much of. You keep going, determined to get out, and you dont stop until the entire wall collapses. You look at the pen, worn down to the tip. Ink stains your hands, but you're free. Your eyes adjust to the bright light and you crawl out. You run, smiling at the sun warming your skin, and you try to get as far as possible from your prison. You are free.",
+													"options": []
+												}
+											},
+											{
+												"title": "Put the pen away and try to find a different exit",
+												"nextParagraph": {
+													"text": "You try the door, knowing its locked, but desperation takes over your mind. You keep pushing it and trying to break it. No change. You start to feel dizzy from lack of water, and you dont even notice you have fallen to the ground until you hear your skull hitting the floor. Your eyes close, then open. But you no longer control the movements of your eyelids, as all your muscles slacken. You are dead.",
+													"options": []
+												}
+											}
+										]
+									}
+								}
+							]
+						}
+					},
+					{
+						"title": "Try to ask for help",
+						"nextParagraph": {
+							"text": "You walk up to the nearest camera, and you start to talk to it. You start by talking about how cold it is and how dark it is, and how you wish to see civilisation. You wonder out loud if you are alone in the world and you wonder if your little room is all there is to the universe. You keep talking, and when your voice goes hoarse, you keep wondering if the camera leads to another being, or is just an ornament. You go insane without realising it, and die from natural causes.",
+							"options": []
+						}
+					}
+				]
 			}
 		},
 		{
@@ -15,13 +60,76 @@
 				"options": [
 					{
 						"title": "Inspect the pen",
-						"nextParagraph": {}
+						"nextParagraph": {
+							"text": "You click the pen as if to start writing. Something inside the pen clicks into place and the pen starts making a ticking noise. What do you do?",
+							"options": [
+								{
+									"title": "Click the pen again",
+									"nextParagraph": {
+										"text": "The pen explodes and a sharp piece of metal pierces your chest. You die.",
+										"options": []
+									}
+								},
+								{
+									"title": "Throw the pen at the wall",
+									"nextParagraph": {
+										"text": "The pen bounces off the wall and explodes. A small piece of shrapnel damages your ear. Soon after, armed security guards enter the room and tranquilise you. You lose!",
+										"options": []
+									}
+								}
+							]
+						}
 					},
 					{
 						"title": "Attempt to find a battery somewhere in the room",
 						"nextParagraph": {
-							"text": "BY this point your eyes have adjusted to the darkness, you can make out what is now in the room, it appers small and confined. You find a table and a box in the corner.",
-							"options": []
+							"text": "By this point your eyes have adjusted to the darkness, you can make out what is now in the room, it appers small and confined. You find a table and a box in the corner.",
+							"options": [
+								{
+									"title": "Go to the table",
+									"nextParagraph": {
+										"text": "On the table there are some batteries, a razor and an opaque test tube",
+										"options": [
+											{
+												"title": "Put the battery inside the flashlight",
+												"nextParagraph": {
+													"text": "You take the battery and place it inside the flashlight, all is well untill you try to switch on the flashlight, your hand begins to feel warm, the flashlight appers to be expanding. The flashlight suddenly explodes tearing your flesh apart. You have died.",
+													"options": []
+												}
+											},
+											{
+												"title": "look inside the test tube",
+												"nextParagraph": {
+													"text": "Inside the test tube you find a soggy key, you qyickly dry it on your clothes and walk to the door. You slowly turn turn the key in the door to the room and it unlocks, you pull the handle and exit the room You're out! Youhave won! But what lies beyond? Only time will tell",
+													"options": []
+												}
+											}
+										]
+									}
+								},
+								{
+									"title": "Go to the box",
+									"nextParagraph": {
+										"text": "You open the dusty box. Inside it you find a safe with a number pad lock. You've made a lucky guess and it worked! There is a beaker containing a bubbling liquid. Do you:",
+										"options": [
+											{
+												"title": "Drink it",
+												"nextParagraph": {
+													"text": "As you drink it, you can feel adrenaline flowing through your veins, making you extremely strong. You charge against the door and break it open. You have managed to escape!",
+													"options": []
+												}
+											},
+											{
+												"title": "Leave it",
+												"nextParagraph": {
+													"text": "You decide against drinking it, as it does not look quite appealing. At that moment armed security forces enter the room and pin you down. Confused, you struggle and fight back. The one pinning you down glances at another guard, who nods, with an melancholic expression. Then the first one injects you with something. You ran out of time!",
+													"options": []
+												}
+											}
+										]
+									}
+								}
+							]
 						}
 					},
 					{
@@ -49,7 +157,22 @@
 					{
 						"title": "Get the red pill",
 						"nextParagraph": {
-							"text": "You took the red pill and something is not right. Your eyes start swelling and burning in such a way that tears sta"
+							"text": "You took the red pill and something is not right. Your eyes start swelling and burning in such a way that tears start falling from your eyes as a fountain of water and minerals. You pass out... never to be seen again.",
+							"options": []
+						}
+					},
+					{
+						"title": "Get the syringe",
+						"nextParagraph": {
+							"text": "You take the syringe and inject it in your system. Unfortunately the solution inside is hydrochloric acid, and with the sodium in your blood, it mixes into beautiful salt crystals. But...you are dead.",
+							"options": []
+						}
+					},
+					{
+						"title": "Get the laser",
+						"nextParagraph": {
+							"text": "You take the laser and you turn it on. The bright monochromatic beam hits the wall, and as it diffracts through, the whole room starts to disappear into existance. Congratulations! You Escaped",
+							"options": []
 						}
 					}
 				]
